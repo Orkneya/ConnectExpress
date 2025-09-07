@@ -33,7 +33,8 @@
 }
 
 .active {
-  color: var(--button-hover);
+  color: blueviolet;
+  /* color: var(--button-hover); */
 }
 
 /* .header {

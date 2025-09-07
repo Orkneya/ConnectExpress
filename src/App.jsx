@@ -1,9 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/HomePage/HomePage.jsx";
-// import Catalog from "./pages/CatalogPage/CatalogPage.jsx";
-// import CamperDetails from "./pages/DetailsPage/DetailsPage.jsx";
-// import ReviewsPage from "./pages/ReviewsPage/ReviewsPage.jsx";
 import Header from "./components/Header/Header.jsx";
+import ServicesPage from "./pages/ServicesPage/ServicesPage.jsx";
+import About from "./pages/About/About.jsx";
+import ContactPage from "./pages/ContactPage/ContactPage.jsx";
 
 function App() {
   return (
@@ -11,9 +11,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/catalog" element={<Catalog />} /> */}
-        {/* <Route path="/catalog/:id" element={<CamperDetails />} /> */}
-        {/* <Route path="/reviews" element={<ReviewsPage />} /> */}
+        <Route path="/services" element={<ServicesPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </>
   );

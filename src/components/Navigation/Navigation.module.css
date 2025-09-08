@@ -1,33 +1,18 @@
-.wrap {
-  position: relative;
-}
-
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .logo {
-  padding: 16px 8px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .buttonMenuToggle {
   background-color: var(--color-background);
   border: none;
   cursor: pointer;
-}
-
-.desktopLinks {
-  display: none;
 }
 
 .mobileMenu {
@@ -37,11 +22,14 @@
   gap: 17px;
 }
 
-/* список навигации */
 .list {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 800;
 }
 
 .link {
@@ -60,36 +48,14 @@
   font-weight: 700;
 }
 
-/* планшеты */
 @media only screen and (min-width: 768px) and (max-width: 1439px) {
-  .tabletSet {
-    display: flex;
-    gap: 24px;
-    align-items: center;
-  }
-
   .list {
     flex-direction: row;
     gap: 24px;
   }
 }
 
-/* десктоп */
 @media only screen and (min-width: 1440px) {
-  .desktopLinks {
-    display: flex;
-    gap: 32px;
-    align-items: center;
-  }
-
-  .buttonMenuToggle {
-    display: none;
-  }
-
-  .tabletSet {
-    display: none;
-  }
-
   .list {
     flex-direction: row;
     gap: 32px;

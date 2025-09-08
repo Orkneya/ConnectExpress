@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import style from "./Navigation.module.css";
+import Logo from "../../assets/images/LogoPrint.jpg";
 
 const NavLinks = ({ onClick }) => {
   const setActiveClass = ({ isActive }) =>
@@ -8,26 +9,26 @@ const NavLinks = ({ onClick }) => {
 
   return (
     <div className={style.wrapper}>
-      <div className={style.logo}>ConnerExpress</div>
+      <img className={style.logo} src={Logo} alt="Company Logo" />
       <ul className={style.list}>
         <li>
           <NavLink to="/" className={setActiveClass} onClick={onClick}>
-            Home
+            На головну
           </NavLink>
         </li>
         <li>
           <NavLink to="/services" className={setActiveClass} onClick={onClick}>
-            Services
+            Послуги
           </NavLink>
         </li>
         <li>
           <NavLink to="/about" className={setActiveClass} onClick={onClick}>
-            About
+            Про компанію
           </NavLink>
         </li>
         <li>
           <NavLink to="/contact" className={setActiveClass} onClick={onClick}>
-            Contact
+            Контакти
           </NavLink>
         </li>
       </ul>

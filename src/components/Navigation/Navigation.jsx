@@ -1,38 +1,102 @@
+// import { NavLink } from "react-router-dom";
+// import clsx from "clsx";
+// import style from "./Navigation.module.css";
+// import Logo from "../../assets/images/LogoPrint.jpg";
+
+// const NavLinks = ({ onClick }) => {
+//   const setActiveClass = ({ isActive }) =>
+//     clsx(style.link, isActive && style.active);
+
+//   return (
+//     <div className={style.wrapper}>
+//       <img className={style.logo} src={Logo} alt="Company Logo" />
+//       <ul className={style.list}>
+//         <li>
+//           <NavLink to="/" className={setActiveClass} onClick={onClick}>
+//             На головну
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/services" className={setActiveClass} onClick={onClick}>
+//             Послуги
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/" className={setActiveClass} onClick={onClick}>
+//             Додаткові послуги
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/about" className={setActiveClass} onClick={onClick}>
+//             Про компанію
+//           </NavLink>
+//         </li>
+//         <li>
+//           <NavLink to="/contact" className={setActiveClass} onClick={onClick}>
+//             Контакти
+//           </NavLink>
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+// export default NavLinks;
+
+import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import style from "./Navigation.module.css";
 import Logo from "../../assets/images/LogoPrint.jpg";
+import CloseIcon from "../../assets/icons/close.svg";
+import BurgerIcon from "../../assets/icons/burger-regular.svg";
 
-const NavLinks = ({ onClick }) => {
+const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen((prev) => !prev);
+  const closeMenu = () => setIsOpen(false);
+
   const setActiveClass = ({ isActive }) =>
     clsx(style.link, isActive && style.active);
 
   return (
     <div className={style.wrapper}>
       <img className={style.logo} src={Logo} alt="Company Logo" />
-      <ul className={style.list}>
+
+      <button className={style.buttonMenuToggle} onClick={toggleMenu}>
+        <img
+          src={isOpen ? CloseIcon : BurgerIcon}
+          alt={isOpen ? "Close menu" : "Open menu"}
+        />
+      </button>
+
+      <ul
+        className={clsx(style.list, isOpen && style.listOpen)}
+        onClick={closeMenu}
+      >
         <li>
-          <NavLink to="/" className={setActiveClass} onClick={onClick}>
+          <NavLink to="/" className={setActiveClass}>
             На головну
           </NavLink>
         </li>
         <li>
-          <NavLink to="/services" className={setActiveClass} onClick={onClick}>
+          <NavLink to="/services" className={setActiveClass}>
             Послуги
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" className={setActiveClass} onClick={onClick}>
+          <NavLink to="/addservices" className={setActiveClass}>
             Додаткові послуги
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" className={setActiveClass} onClick={onClick}>
+          <NavLink to="/about" className={setActiveClass}>
             Про компанію
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" className={setActiveClass} onClick={onClick}>
+          <NavLink to="/contact" className={setActiveClass}>
             Контакти
           </NavLink>
         </li>
@@ -41,4 +105,4 @@ const NavLinks = ({ onClick }) => {
   );
 };
 
-export default NavLinks;
+export default Navigation;

@@ -27,6 +27,7 @@ import Home from "./pages/HomePage/HomePage.jsx";
 import ServicesPage from "./pages/ServicesPage/ServicesPage.jsx";
 import About from "./pages/About/About.jsx";
 import ContactPage from "./pages/ContactPage/ContactPage.jsx";
+import AddServicesPage from "./pages/AddServicesPage/AddServicesPage.jsx";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <Route element={<Layout />}>
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<ServicesPage />} />
+        <Route path="/addservices" element={<AddServicesPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactPage />} />
       </Route>

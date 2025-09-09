@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,6 +58,89 @@
 @media only screen and (min-width: 1440px) {
   .list {
     flex-direction: row;
+    gap: 32px;
+  }
+} */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 48px;
+  object-fit: contain;
+}
+
+/* кнопка гамбургер */
+.buttonMenuToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  display: block;
+  z-index: 1100;
+}
+
+/* список скрыт по умолчанию на мобилках */
+.list {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0;
+  padding: 24px;
+  list-style: none;
+  font-weight: 800;
+  background-color: var(--color-background);
+  position: absolute;
+  top: 72px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* показываем меню, когда открыт */
+.listOpen {
+  display: flex;
+}
+
+/* ссылки */
+.link {
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: var(--color-general);
+}
+
+.active {
+  color: var(--color-general);
+  font-weight: 700;
+}
+
+/* планшеты */
+@media only screen and (min-width: 768px) {
+  .buttonMenuToggle {
+    display: none;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    position: static;
+    padding: 0;
+    background: transparent;
+  }
+}
+
+/* десктоп */
+@media only screen and (min-width: 1440px) {
+  .list {
     gap: 32px;
   }
 }

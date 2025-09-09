@@ -22,6 +22,11 @@ const NavLinks = ({ onClick }) => {
           </NavLink>
         </li>
         <li>
+          <NavLink to="/" className={setActiveClass} onClick={onClick}>
+            Додаткові послуги
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/about" className={setActiveClass} onClick={onClick}>
             Про компанію
           </NavLink>

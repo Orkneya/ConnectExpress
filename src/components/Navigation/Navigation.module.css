@@ -1,67 +1,3 @@
-/* .wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  height: 48px;
-  object-fit: contain;
-}
-
-.buttonMenuToggle {
-  background-color: var(--color-background);
-  border: none;
-  cursor: pointer;
-}
-
-.mobileMenu {
-  padding: 24px 0;
-  display: flex;
-  flex-direction: column;
-  gap: 17px;
-}
-
-.list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-weight: 800;
-}
-
-.link {
-  text-decoration: none;
-  color: var(--color-text);
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.link:hover {
-  color: var(--color-general);
-}
-
-.active {
-  color: var(--color-general);
-  font-weight: 700;
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1439px) {
-  .list {
-    flex-direction: row;
-    gap: 24px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .list {
-    flex-direction: row;
-    gap: 32px;
-  }
-} */
-
 .wrapper {
   display: flex;
   align-items: center;
@@ -69,11 +5,10 @@
 }
 
 .logo {
-  height: 48px;
+  height: 32px;
   object-fit: contain;
 }
 
-/* кнопка гамбургер */
 .buttonMenuToggle {
   background: none;
   border: none;
@@ -83,11 +18,11 @@
   z-index: 1100;
 }
 
-/* список скрыт по умолчанию на мобилках */
 .list {
   display: none;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+  text-align: center;
   margin: 0;
   padding: 24px;
   list-style: none;
@@ -100,25 +35,24 @@
   z-index: 1000;
 }
 
-/* показываем меню, когда открыт */
 .listOpen {
   display: flex;
 }
 
-/* ссылки */
 .link {
   text-decoration: none;
-  color: var(--color-text);
+  color: var(--color-input);
   font-weight: 500;
   transition: color 0.3s ease;
+  text-transform: uppercase;
 }
 
 .link:hover {
-  color: var(--color-general);
+  color: var(--color-darker);
 }
 
 .active {
-  color: var(--color-general);
+  color: var(--color-darker);
   font-weight: 700;
 }
 
@@ -128,13 +62,19 @@
     display: none;
   }
 
+  .logo {
+    height: 40px;
+  }
+
   .list {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 15px;
+    text-align: center;
     position: static;
     padding: 0;
     background: transparent;
+    font-weight: 500;
   }
 }
 
@@ -142,5 +82,9 @@
 @media only screen and (min-width: 1440px) {
   .list {
     gap: 32px;
+  }
+
+  .logo {
+    height: 48px;
   }
 }

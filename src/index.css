@@ -7,9 +7,12 @@
 
   --color-background: white;
   /* --color-background: #d1e0d8; */
-  --color-general: blueviolet;
   /* --color-general: #649179; */
-  --color-darker: #374f42;
+  --color-general: #9b6881;
+  /* --color-general: blueviolet; */
+  --color-darker: #1fb4cc;
+  /* --color-darker: #3c94a3; */
+  /* --color-darker: #374f42; */
   --color-black: #070721;
   --color-white: #f7fffb;
   --color-input: #595d62;
@@ -36,11 +39,6 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {

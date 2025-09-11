@@ -1,18 +1,5 @@
-/* .section {
-  background-image: url("../../assets/Connect.webp");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 64px;
-  color: white;
-  text-align: left;
-} */
 .section {
-  background-image: url("../../assets/images/Banner.jpg");
+  background-image: url("../../assets/images/Banner-Mobil.jpg");
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -20,10 +7,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 64px;
+  padding-left: 16px;
   color: white;
   text-align: left;
 }
+.title {
+  margin-top: 400px;
+  color: var(--color-darker);
+  text-align: center;
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+/* .section {
+  background-size: contain; 
+  background-position: top center;
+  background-repeat: no-repeat;
+} */
 .comment {
   font-weight: 400;
   font-size: 18px;
@@ -37,6 +36,17 @@
     font-weight: 500;
     font-size: 20px;
     padding-bottom: 30px;
+  }
+  .title {
+    font-size: 5.2em;
+    line-height: 1.33;
+  }
+
+  .section {
+    background-image: url("../../assets/images/Banner.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-left: 64px;
   }
 }
 

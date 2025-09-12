@@ -48,11 +48,11 @@
 }
 
 .link:hover {
-  color: var(--color-darker);
+  color: var(--color-darker-blue);
 }
 
 .active {
-  color: var(--color-darker);
+  color: var(--color-blue);
   font-weight: 700;
 }
 

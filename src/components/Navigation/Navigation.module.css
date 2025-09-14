@@ -77,6 +77,10 @@
   text-transform: none;
 }
 
+.hasSubmenu:hover .submenu {
+  display: flex;
+}
+
 .submenu li::before {
   content: "•";
   position: absolute;

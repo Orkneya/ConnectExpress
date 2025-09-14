@@ -10,6 +10,10 @@ import Auto from "./components/services/Auto.jsx";
 import Courier from "./components/services/Courier.jsx";
 import Sea from "./components/services/Sea.jsx";
 import Train from "./components/services/Train.jsx";
+import Customs from "./components/addservices/Customs.jsx";
+import Insurance from "./components/addservices/Insurance.jsx";
+import Dangerous from "./components/addservices/Dangerous.jsx";
+import Temperature from "./components/addservices/Temperature.jsx";
 
 function App() {
   return (
@@ -21,11 +25,18 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactPage />} />
 
+        {/* Services */}
         <Route path="/services/air" element={<Air />} />
         <Route path="/services/auto" element={<Auto />} />
         <Route path="/services/sea" element={<Sea />} />
         <Route path="/services/courier" element={<Courier />} />
         <Route path="/services/train" element={<Train />} />
+
+        {/* AddServices */}
+        <Route path="/addservices/customs" element={<Customs />} />
+        <Route path="/addservices/insurance" element={<Insurance />} />
+        <Route path="/addservices/temperature" element={<Temperature />} />
+        <Route path="/addservices/dangerous" element={<Dangerous />} />
       </Route>
     </Routes>
   );

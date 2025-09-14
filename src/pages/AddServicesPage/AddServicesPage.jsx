@@ -1,16 +1,10 @@
-import React from "react";
-
-const AddServicesPage = () => {
+function AddServicesPage() {
   return (
     <div>
-      <ul>
-        <li>Митно-брокерські послуги</li>
-        <li>Страхування вантажу</li>
-        <li>Температурна логістика</li>
-        <li>Небезпечні вантажи</li>
-      </ul>
+      <h1>Додаткові послуги</h1>
+      <p>Оберіть потрібну додаткову послугу з меню.</p>
     </div>
   );
-};
+}
 
 export default AddServicesPage;

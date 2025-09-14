@@ -35,11 +35,6 @@ const Navigation = () => {
             На головну
           </NavLink>
         </li>
-        {/* <li>
-          <NavLink to="/services" className={setActiveClass}>
-            Послуги
-          </NavLink>
-        </li> */}
         <li className={style.hasSubmenu}>
           <NavLink to="/services" className={setActiveClass}>
             Послуги
@@ -72,12 +67,34 @@ const Navigation = () => {
             </li>
           </ul>
         </li>
-
-        <li>
+        <li className={style.hasSubmenu}>
           <NavLink to="/addservices" className={setActiveClass}>
             Додаткові послуги
           </NavLink>
+          <ul className={style.submenu}>
+            <li>
+              <NavLink to="/addservices/customs" className={setActiveClass}>
+                Митно-брокерські послуги
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/addservices/insurance" className={setActiveClass}>
+                Страхування вантажу
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/addservices/temperature" className={setActiveClass}>
+                Температурна логістика
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/addservices/dangerous" className={setActiveClass}>
+                Небезпечні вантажі
+              </NavLink>
+            </li>
+          </ul>
         </li>
+
         <li>
           <NavLink to="/about" className={setActiveClass}>
             Про компанію

@@ -15,6 +15,12 @@ const Navigation = () => {
   const setActiveClass = ({ isActive }) =>
     clsx(style.link, isActive && style.active);
 
+  const MenuLink = ({ to, children }) => (
+    <NavLink to={to} className={setActiveClass} onClick={closeMenu}>
+      {children}
+    </NavLink>
+  );
+
   return (
     <div className={style.wrapper}>
       <img className={style.logo} src={Logo} alt="Company Logo" />
@@ -26,84 +32,65 @@ const Navigation = () => {
         />
       </button>
 
-      <ul
-        className={clsx(style.list, isOpen && style.listOpen)}
-        onClick={closeMenu}
-      >
+      <ul className={clsx(style.list, isOpen && style.listOpen)}>
         <li>
-          <NavLink to="/" className={setActiveClass}>
-            На головну
-          </NavLink>
+          <MenuLink to="/">На головну</MenuLink>
         </li>
+
+        {/* Послуги */}
         <li className={style.hasSubmenu}>
-          <NavLink to="/services" className={setActiveClass}>
-            Послуги
-          </NavLink>
+          <MenuLink to="/services">Послуги</MenuLink>
           <ul className={style.submenu}>
             <li>
-              <NavLink to="/services/air" className={setActiveClass}>
-                Авіаперевезення
-              </NavLink>
+              <MenuLink to="/services/air">Авіаперевезення</MenuLink>
             </li>
             <li>
-              <NavLink to="/services/auto" className={setActiveClass}>
-                Автоперевезення
-              </NavLink>
+              <MenuLink to="/services/auto">Автоперевезення</MenuLink>
             </li>
             <li>
-              <NavLink to="/services/sea" className={setActiveClass}>
-                Морські перевезення
-              </NavLink>
+              <MenuLink to="/services/sea">Морські перевезення</MenuLink>
             </li>
             <li>
-              <NavLink to="/services/courier" className={setActiveClass}>
-                Кур'єрські перевезення
-              </NavLink>
+              <MenuLink to="/services/courier">Кур'єрські перевезення</MenuLink>
             </li>
             <li>
-              <NavLink to="/services/train" className={setActiveClass}>
-                Залізничні перевезення
-              </NavLink>
+              <MenuLink to="/services/train">Залізничні перевезення</MenuLink>
             </li>
           </ul>
         </li>
+
+        {/* Додаткові послуги */}
         <li className={style.hasSubmenu}>
-          <NavLink to="/addservices" className={setActiveClass}>
-            Додаткові послуги
-          </NavLink>
+          <MenuLink to="/addservices">Додаткові послуги</MenuLink>
           <ul className={style.submenu}>
             <li>
-              <NavLink to="/addservices/customs" className={setActiveClass}>
+              <MenuLink to="/addservices/customs">
                 Митно-брокерські послуги
-              </NavLink>
+              </MenuLink>
             </li>
             <li>
-              <NavLink to="/addservices/insurance" className={setActiveClass}>
+              <MenuLink to="/addservices/insurance">
                 Страхування вантажу
-              </NavLink>
+              </MenuLink>
             </li>
             <li>
-              <NavLink to="/addservices/temperature" className={setActiveClass}>
+              <MenuLink to="/addservices/temperature">
                 Температурна логістика
-              </NavLink>
+              </MenuLink>
             </li>
             <li>
-              <NavLink to="/addservices/dangerous" className={setActiveClass}>
+              <MenuLink to="/addservices/dangerous">
                 Небезпечні вантажі
-              </NavLink>
+              </MenuLink>
             </li>
           </ul>
         </li>
 
         <li>
-          <NavLink to="/about" className={setActiveClass}>
-            Про компанію
-          </NavLink>
+          <MenuLink to="/about">Про компанію</MenuLink>
         </li>
         <li>
-          <NavLink to="/contact" className={setActiveClass}>
-            Контакти
-          </NavLink>
+          <MenuLink to="/contact">Контакти</MenuLink>
         </li>
       </ul>
     </div>

@@ -5,6 +5,7 @@
 }
 
 .main {
-  flex: 1; /* чтобы контент растягивался */
-  padding-top: 72px; /* учитываем фиксированный header */
+  flex: 1;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }

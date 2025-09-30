@@ -1,13 +1,12 @@
-.footerSection {
+/* .footerSection {
   background-color: var(--color-background-blue);
 }
 
 .footerContainer {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 16px;
-  padding: 16px 16px;
+  padding: 8px;
 }
 
 .logo {
@@ -15,12 +14,47 @@
   object-fit: contain;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+.text {
+  font-size: 16px;
+  color: var(--color-input);
+}
+
 @media only screen and (min-width: 768px) {
   .footerContainer {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 24px 32px;
+    gap: 8px;
+    padding: 4px 20px;
+  }
+
+  .contacts {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .text {
+    font-size: 18px;
   }
 }
 
@@ -29,6 +63,82 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 40px;
+    padding: 12px 20px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+} */
+.footerSection {
+  background-color: var(--color-background-blue);
+}
+
+.footerContainer {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 20px;
+}
+
+.logo {
+  height: 32px;
+  object-fit: contain;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column; /* контакты друг под другом */
+  align-items: flex-start; /* выравнивание по левому краю */
+  gap: 4px;
+  margin-left: auto; /* блок контактов к правому краю */
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* расстояние между иконкой и текстом */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0; /* чтобы иконка не сжималась */
+}
+
+.text {
+  font-size: 14px;
+  color: var(--color-input);
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    height: 36px;
+  }
+  .icon {
+    width: 28px;
+    height: 28px;
+  }
+  .text {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo {
+    height: 40px;
+  }
+  .icon {
+    width: 32px;
+    height: 32px;
+  }
+  .text {
+    font-size: 18px;
   }
 }

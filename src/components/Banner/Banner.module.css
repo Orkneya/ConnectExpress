@@ -11,18 +11,18 @@
   color: white;
   text-align: left;
 }
+
 .title {
   margin-top: 400px;
-  color: var(--);
-  text-align: center;
   font-size: 3.2em;
-  line-height: 1.1;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: bold;
+
+  text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
+    -2px -2px 0 #1fb4cc;
 }
-/* .section {
-  background-size: contain; 
-  background-position: top center;
-  background-repeat: no-repeat;
-} */
+
 .comment {
   font-weight: 400;
   font-size: 18px;

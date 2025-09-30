@@ -15,10 +15,8 @@
   --color-black: #070721;
   --color-white: #f7fffb;
   --color-input: #595d62;
-  /* --color-input-light: #9f9f9f; */
   --color-input-light: #555;
-  /* --color-border: #535bf2; */
-  /* --shadow-focus: 0px 0px 0px 4px rgba(78, 70, 180, 0.2); */
+  --shadow-focus: 0px 0px 0px 4px rgba(78, 70, 180, 0.2);
 }
 a {
   font-weight: 500;
@@ -64,10 +62,4 @@ button:focus-visible {
     color: var(--color-input);
     background-color: var(--color-background);
   }
-  /* a:hover {
-    color: var(--color-blue);
-  }
-  button {
-    background-color: #f9f9f9;
-  } */
 }

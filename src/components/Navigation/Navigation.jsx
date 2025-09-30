@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 import style from "./Navigation.module.css";
-import Logo from "../../assets/images/LogoPrint.jpg";
+import Logo from "../../assets/images/LogoPrint.png";
 import CloseIcon from "../../assets/icons/close.svg";
 import BurgerIcon from "../../assets/icons/burger-regular.svg";
 

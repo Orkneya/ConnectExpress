@@ -1,5 +1,3 @@
-// import FooterNavigation from "./FooterNavigation.jsx";
-// import IconFooterLogo from "../../assets/images/icons/logo.svg?react";
 import Container from "../Container/Container.jsx";
 import style from "./Footer.module.css";
 import Logo from "../../assets/images/LogoPrint.png";

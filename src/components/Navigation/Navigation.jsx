@@ -59,7 +59,6 @@ const Navigation = () => {
           </ul>
         </li>
 
-        {/* Додаткові послуги */}
         <li className={style.hasSubmenu}>
           <MenuLink to="/addservices">Додаткові послуги</MenuLink>
           <ul className={style.submenu}>

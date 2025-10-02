@@ -1,71 +1,4 @@
-/* .section {
-  background-image: url("../../assets/images/mainBanner-mobile-with-logo.webp");
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 16px;
-  color: white;
-  text-align: left;
-}
-
-.title {
-  margin-top: 400px;
-  font-size: 3.2em;
-  text-align: center;
-  color: var(--color-white);
-  font-weight: bold;
-
-
-  text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
-    -2px -2px 0 #1fb4cc;
-}
-
-.comment {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1;
-  color: var(----color-input);
-  padding-bottom: 25px;
-}
-
-@media only screen and (min-width: 768px) {
-  .comment {
-    font-weight: 500;
-    font-size: 20px;
-    padding-bottom: 30px;
-  }
-  .title {
-    font-size: 5.2em;
-    line-height: 1.33;
-  }
-
-  .section {
-    background-image: url("../../assets/images/mainBanner-tablet.webp");
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .comment {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 1.33;
-    padding-bottom: 40px;
-  }
-  .section {
-    background-image: url("../../assets/images/mainBanner.webp");
-    background-size: cover;
-    background-position: center;
-  }
-} */
-
 .section {
-  /* фон */
   background-image: url("../../assets/images/mainBanner-mobile-with-logo.webp");
   background-size: cover;
   background-position: center;
@@ -78,7 +11,7 @@
   justify-content: center;
   align-items: flex-start;
 
-  padding: 0 16px;
+  padding: 0;
   color: var(--color-white);
   text-align: left;
 }
@@ -105,7 +38,7 @@
   .section {
     background-image: url("../../assets/images/mainBanner-tablet.webp");
     min-height: calc(100vh - 64px); /* выше header */
-    padding: 0 24px;
+    padding: 0;
   }
 
   .title {
@@ -125,7 +58,7 @@
   .section {
     background-image: url("../../assets/images/mainBanner.webp");
     min-height: calc(100vh - 80px); /* учитываем высоту десктопного header */
-    padding: 0 32px;
+    padding: 0;
   }
 
   .title {

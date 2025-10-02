@@ -1,4 +1,4 @@
-.section {
+/* .section {
   background-image: url("../../assets/images/mainBanner-mobile-with-logo.webp");
   background-size: cover;
   background-position: center;
@@ -18,7 +18,7 @@
   text-align: center;
   color: var(--color-white);
   font-weight: bold;
-  /* -webkit-text-stroke: 2px #1fb4cc; */
+
 
   text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
     -2px -2px 0 #1fb4cc;
@@ -47,7 +47,6 @@
     background-image: url("../../assets/images/mainBanner-tablet.webp");
     background-size: cover;
     background-position: center;
-    /* padding-left: 64px; */
   }
 }
 
@@ -62,6 +61,80 @@
     background-image: url("../../assets/images/mainBanner.webp");
     background-size: cover;
     background-position: center;
-    /* padding-left: 64px; */
+  }
+} */
+
+.section {
+  /* фон */
+  background-image: url("../../assets/images/mainBanner-mobile-with-logo.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: calc(100vh - 56px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding: 0 16px;
+  color: var(--color-white);
+  text-align: left;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  /* -webkit-text-stroke: 2px #1fb4cc; */
+  text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
+    -2px -2px 0 #1fb4cc;
+  margin-bottom: 16px;
+}
+
+.comment {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color-input);
+  padding-bottom: 24px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .section {
+    background-image: url("../../assets/images/mainBanner-tablet.webp");
+    min-height: calc(100vh - 64px); /* выше header */
+    padding: 0 24px;
+  }
+
+  .title {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .comment {
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .section {
+    background-image: url("../../assets/images/mainBanner.webp");
+    min-height: calc(100vh - 80px); /* учитываем высоту десктопного header */
+    padding: 0 32px;
+  }
+
+  .title {
+    font-size: 4rem;
+  }
+
+  .comment {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding-bottom: 40px;
   }
 }

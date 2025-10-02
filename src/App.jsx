@@ -18,8 +18,10 @@ import Temperature from "./components/addservices/Temperature.jsx";
 function App() {
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route element={<Layout isHome={true} />}>
         <Route path="/" element={<Home />} />
+      </Route>
+      <Route element={<Layout />}>
         <Route path="/services" element={<ServicesPage />} />
         <Route path="/addservices" element={<AddServicesPage />} />
         <Route path="/about" element={<About />} />

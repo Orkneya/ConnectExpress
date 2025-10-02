@@ -4,11 +4,11 @@ import Header from "../Header/Header.jsx";
 import Footer from "../Footer/Footer.jsx";
 import style from "./Layout.module.css";
 
-const Layout = () => {
+const Layout = (isHome) => {
   return (
     <div className={style.layout}>
       <Header />
-      <main className={style.main}>
+      <main className={isHome ? style.mainHome : style.main}>
         <Container>
           <Outlet />
         </Container>

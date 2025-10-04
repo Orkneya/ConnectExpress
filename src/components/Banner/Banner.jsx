@@ -6,9 +6,6 @@ export default function Banner() {
   return (
     <section className={styles.section}>
       <h1 className={styles.title}>Services of your dreams</h1>
-      {/* <p className={styles.comment}>
-        You can find everything you want in our catalog
-      </p> */}
       {/* <button className={`button`} onClick={() => navigate("/services")}>
         View Now
       </button> */}

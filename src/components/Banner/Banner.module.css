@@ -41,8 +41,7 @@
   }
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .section {
     background-image: url("../../assets/images/mainBanner.webp");
     min-height: calc(100vh - 56px);

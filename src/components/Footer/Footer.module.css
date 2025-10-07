@@ -1,15 +1,19 @@
 .footerSection {
   background-color: var(--color-background-blue);
   margin-top: auto;
+  width: 100%;
 }
 
 .footerContainer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 12px;
-  gap: 20px;
   flex-wrap: wrap;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -44,13 +48,11 @@
 
 @media (min-width: 768px) {
   .footerContainer {
-    padding: 12px 24px;
-    gap: 32px;
+    padding: 16px 32px;
   }
 
   .contacts {
-    /* flex-direction: row;  */
-    gap: 16px;
+    gap: 12px;
   }
 
   .logo {
@@ -67,9 +69,9 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   .footerContainer {
-    padding: 16px 24px;
+    padding: 16px 64px;
   }
 
   .logo {

@@ -19,11 +19,10 @@
 }
 .list {
   position: absolute;
-  top: 52px; /* сразу под header */
+  top: 52px;
   left: 0;
   right: 0;
   background-color: var(--color-background-blue);
-  /* background-color: var(--color-background); */
 
   display: flex;
   flex-direction: column;
@@ -43,27 +42,6 @@
   max-height: 100vh;
   opacity: 1;
 }
-
-/* .list {
-  display: none;
-  flex-direction: column;
-  gap: 24px;
-  text-align: center;
-  margin: 0;
-  padding: 24px;
-  list-style: none;
-  font-weight: 800;
-  background-color: var(--color-background);
-  position: absolute;
-  top: 72px;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
-.listOpen {
-  display: flex;
-} */
 
 .link {
   text-decoration: none;
@@ -136,6 +114,11 @@
     padding: 0;
     background: transparent;
     font-weight: 500;
+
+    max-height: none;
+    opacity: 1;
+    overflow: visible;
+    transition: none;
   }
 
   .hasSubmenu {
@@ -143,7 +126,7 @@
   }
 
   .submenu {
-    display: none; /* скрываем по умолчанию */
+    display: none;
     position: absolute;
     top: 100%;
     left: 0;

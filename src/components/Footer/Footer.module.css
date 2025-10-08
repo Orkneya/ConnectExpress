@@ -15,6 +15,7 @@
 }
 
 .logo {
+  display: none;
   height: 32px;
   object-fit: contain;
 }
@@ -22,7 +23,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 4px;
 }
 
@@ -41,19 +42,33 @@
 .text {
   font-size: 14px;
   color: var(--color-input);
+  font-weight: 600;
   margin: 0;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.socialIcon {
+  width: 24px;
+  height: 24px;
 }
 
 @media (min-width: 768px) {
   .footerContainer {
-    padding: 16px 0;
+    justify-content: space-between;
   }
 
   .contacts {
-    gap: 12px;
+    flex-direction: row;
+    gap: 16px;
   }
 
   .logo {
+    display: flex;
     height: 36px;
   }
 
@@ -65,13 +80,18 @@
   .text {
     font-size: 16px;
   }
+
+  .socials {
+    justify-content: flex-end;
+  }
+
+  .socialIcon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @media (min-width: 1440px) {
-  .footerContainer {
-    padding: 16px 0;
-  }
-
   .logo {
     height: 40px;
   }
@@ -83,5 +103,28 @@
 
   .text {
     font-size: 18px;
+  }
+
+  .socialIcon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Мобильная версия: скрываем соцсети сверху, оставляем только внизу */
+@media (max-width: 767px) {
+  .footerContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .contacts {
+    order: 1;
+  }
+
+  .socials {
+    order: 2;
+    justify-content: center;
   }
 }

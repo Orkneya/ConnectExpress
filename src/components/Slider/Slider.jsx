@@ -60,9 +60,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import AirIcon from "../../assets/images/Plane.png";
-import AutoIcon from "../../assets/images/Ship.png";
+import AutoIcon from "../../assets/images/SmallCar.png";
 import SeaIcon from "../../assets/images/Ship.png";
-import CourierIcon from "../../assets/images/Ship.png";
+import CourierIcon from "../../assets/images/Box.png";
 import TrainIcon from "../../assets/images/Ship.png";
 import style from "./Slider.module.css";
 import { Link } from "react-router-dom";

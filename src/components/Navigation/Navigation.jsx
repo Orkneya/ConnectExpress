@@ -45,7 +45,7 @@ const Navigation = () => {
               <MenuLink to="/services/air">Авіаперевезення</MenuLink>
             </li>
             <li>
-              <MenuLink to="/services/auto">Автоперевезення</MenuLink>
+              <MenuLink to="/servautoices/">Автоперевезення</MenuLink>
             </li>
             <li>
               <MenuLink to="/services/sea">Морські перевезення</MenuLink>

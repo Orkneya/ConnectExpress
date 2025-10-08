@@ -139,6 +139,9 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   padding: 20px;
   transition: transform 0.3s ease;
+  flex: 1 1 auto;
+  max-width: 100%;
+  height: 100%;
 }
 
 .card:hover .icon {
@@ -162,41 +165,21 @@
   color: var(--color-darker-blue);
 }
 
-/* стрелки Swiper */
-.swiper-button-next,
-.swiper-button-prev {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
-  color: var(--color-blue);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
+.swiper-pagination {
+  bottom: 10px !important;
 }
 
-/* позиция стрелок */
-.swiper-button-prev {
-  left: -20px; /* сдвиг влево за слайдер */
+.swiper-pagination-bullet {
+  background: var(--color-blue);
+  opacity: 0.4;
+  width: 10px;
+  height: 10px;
 }
 
-.swiper-button-next {
-  right: -20px; /* сдвиг вправо за слайдер */
+.swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
-/* скрываем стрелки на десктопе */
-@media (min-width: 1440px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none !important;
-  }
-}
-
-/* адаптив карточек */
 @media (min-width: 768px) {
   .sliderWrapper {
     padding: 32px;

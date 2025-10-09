@@ -7,6 +7,11 @@
 .logo {
   height: 32px;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
 }
 
 .buttonMenuToggle {
@@ -17,6 +22,7 @@
   display: block;
   z-index: 1100;
 }
+
 .list {
   position: absolute;
   top: 52px;
@@ -31,6 +37,7 @@
   list-style: none;
   font-weight: 800;
   text-align: center;
+
   z-index: 999;
   max-height: 0;
   overflow: hidden;
@@ -45,10 +52,10 @@
 
 .link {
   text-decoration: none;
-  color: var(--color-input);
+  color: var(--color-darker-blue);
   font-weight: 500;
-  transition: color 0.3s ease;
   text-transform: uppercase;
+  transition: color 0.3s ease;
 }
 
 .link:hover {
@@ -60,11 +67,15 @@
   font-weight: 700;
 }
 
+.hasSubmenu {
+  position: relative;
+}
+
 .submenu {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 8px 0 0 0;
+  padding-top: 8px;
   list-style: none;
   font-size: 14px;
 }
@@ -72,17 +83,7 @@
 .submenu li {
   position: relative;
   padding-left: 20px;
-  width: 100%;
-  margin-left: 20px;
   text-align: left;
-}
-
-.submenu .link {
-  text-transform: none;
-}
-
-.hasSubmenu:hover > .submenu {
-  display: flex;
 }
 
 .submenu li::before {
@@ -93,12 +94,17 @@
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
+.submenu .link {
+  text-transform: none;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding-right: 30px;
+  }
+
   .buttonMenuToggle {
     display: none;
-  }
-  .submenu li {
-    margin-left: 0;
   }
 
   .logo {
@@ -106,23 +112,16 @@
   }
 
   .list {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    text-align: center;
     position: static;
+    flex-direction: row;
+    gap: 20px;
     padding: 0;
     background: transparent;
-    font-weight: 500;
-
+    font-size: 18px;
     max-height: none;
     opacity: 1;
     overflow: visible;
     transition: none;
-  }
-
-  .hasSubmenu {
-    position: relative;
   }
 
   .submenu {
@@ -142,10 +141,10 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .list {
-    gap: 32px;
-    font-weight: bold;
+    gap: 40px;
+    font-size: 22px;
   }
 
   .logo {

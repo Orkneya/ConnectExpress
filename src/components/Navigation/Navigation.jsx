@@ -23,7 +23,9 @@ const Navigation = () => {
 
   return (
     <div className={style.wrapper}>
-      <img className={style.logo} src={Logo} alt="Company Logo" />
+      <NavLink to="/" onClick={closeMenu}>
+        <img className={style.logo} src={Logo} alt="Company Logo" />
+      </NavLink>
 
       <button className={style.buttonMenuToggle} onClick={toggleMenu}>
         <img
@@ -33,11 +35,6 @@ const Navigation = () => {
       </button>
 
       <ul className={clsx(style.list, isOpen && style.listOpen)}>
-        <li>
-          <MenuLink to="/">На головну</MenuLink>
-        </li>
-
-        {/* Послуги */}
         <li className={style.hasSubmenu}>
           <MenuLink to="/services">Послуги</MenuLink>
           <ul className={style.submenu}>

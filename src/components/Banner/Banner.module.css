@@ -1,20 +1,15 @@
 .section {
-  background-image: url("../../assets/images/mainBanner-mobile-with-logo.webp");
+  background-image: url("../../assets/images/mainBunner-mobil.webp");
   background-size: cover;
-  background-position: center;
+  background-position: top right;
   background-repeat: no-repeat;
 
   min-height: calc(100vh - 52px);
-  /* min-height: 100%; */
 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: flex-start; */
-
-  /* padding: 0; */
   color: var(--color-white);
-  /* text-align: left; */
 }
 
 .title {
@@ -26,10 +21,9 @@
   margin: 0 auto;
 }
 
-/* Tablet */
 @media (min-width: 768px) {
   .section {
-    background-image: url("../../assets/images/mainBanner-tablet.webp");
+    background-image: url("../../assets/images/mainBunner-tablet.webp");
     min-height: calc(100vh - 48px);
     padding: 0;
   }
@@ -43,7 +37,7 @@
 
 @media (min-width: 1440px) {
   .section {
-    background-image: url("../../assets/images/mainBanner.webp");
+    background-image: url("../../assets/images//mainBunner.webp");
     min-height: calc(100vh - 56px);
     padding: 0;
   }

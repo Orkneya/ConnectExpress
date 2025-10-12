@@ -47,14 +47,19 @@ const Footer = () => {
           <img className={style.logo} src={Logo} alt="Company Logo" />
 
           <div className={style.contacts}>
-            <div className={style.contactItem}>
+            <a className={style.contactItem} href="tel:+380506467573">
               <img className={style.icon} src={Phone} alt="Phone" />
-              <p className={style.text}>+38 050 646 75 73</p>
-            </div>
-            <div className={style.contactItem}>
+              <span className={style.text}>+38 050 646 75 73</span>
+            </a>
+            <a
+              className={style.contactItem}
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=connect_global@ukr.net"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img className={style.icon} src={Email} alt="Email" />
-              <p className={style.text}>connect_global@ukr.net</p>
-            </div>
+              <span className={style.text}>connect_global@ukr.net</span>
+            </a>
           </div>
 
           <div className={style.socials}>

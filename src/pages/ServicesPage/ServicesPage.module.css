@@ -1,4 +1,4 @@
-.services-page {
+.servicesPage {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -8,8 +8,10 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 33vh; /* третина сторінки */
-  background: url("img/hero-bg.jpg") center/cover no-repeat;
+  height: 33vh;
+  background: url("../../assets/images/Servises/Servises.jpg") center/cover
+    no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,48 +28,50 @@
   backdrop-filter: blur(8px);
 }
 
-.hero-title {
+.heroTitle {
   position: relative;
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-white);
+  text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
+    -2px -2px 0 #1fb4cc;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 
-.services-grid {
+.servicesGrid {
   display: grid;
   width: 90%;
   margin: 2rem auto;
   gap: 16px;
 }
 
-.services-grid {
+.servicesGrid {
   grid-template-columns: 1fr;
 }
 
 @media (min-width: 768px) {
-  .services-grid {
+  .servicesGrid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .services-grid a:nth-child(5) {
-    grid-column: span 2; /* остання — на всю ширину */
+  .servicesGrid a:nth-child(5) {
+    grid-column: span 2;
   }
 }
 
 @media (min-width: 1440px) {
-  .services-grid {
+  .servicesGrid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .services-grid a:nth-child(4),
-  .services-grid a:nth-child(5) {
+  .servicesGrid a:nth-child(4),
+  .servicesGrid a:nth-child(5) {
     grid-column: span 1;
   }
 }
 
-.service-item {
+.serviceItem {
   display: block;
   overflow: hidden;
   border-radius: 12px;
@@ -75,12 +79,12 @@
   transition: transform 0.3s ease;
 }
 
-.service-item img {
+.serviceItem img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.service-item:hover {
+.serviceItem:hover {
   transform: scale(1.02);
 }

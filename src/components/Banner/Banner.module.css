@@ -1,7 +1,7 @@
 .section {
   background-image: url("../../assets/images/mainBunner-mobil.webp");
   background-size: cover;
-  background-position: top right;
+  background-position: top center;
   background-repeat: no-repeat;
 
   min-height: calc(100vh - 52px);
@@ -15,7 +15,6 @@
 .title {
   font-size: 2rem;
   font-weight: bold;
-  /* -webkit-text-stroke: 2px #1fb4cc; */
   text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
     -2px -2px 0 #1fb4cc;
   margin: 0 auto;
@@ -24,6 +23,7 @@
 @media (min-width: 768px) {
   .section {
     background-image: url("../../assets/images/mainBunner-tablet.webp");
+    background-position: top right;
     min-height: calc(100vh - 48px);
     padding: 0;
   }

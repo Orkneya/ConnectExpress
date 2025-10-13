@@ -12,20 +12,20 @@ function ServicesPage() {
       </div>
 
       <div className={style.servicesGrid}>
-        <a href="/service1" className={style.serviceItem}>
-          <img src="img/service1.jpg" alt="Послуга 1" />
+        <a href="/services/air" className={style.serviceItem}>
+          <img src="img/service1.jpg" alt="Air" />
         </a>
-        <a href="/service2" className={style.serviceItem}>
-          <img src="img/service2.jpg" alt="Послуга 2" />
+        <a href="/services/auto" className={style.serviceItem}>
+          <img src="img/service2.jpg" alt="Auto" />
         </a>
-        <a href="/service3" className={style.serviceItem}>
-          <img src="img/service3.jpg" alt="Послуга 3" />
+        <a href="/services/sea" className={style.serviceItem}>
+          <img src="img/service3.jpg" alt="Sea" />
         </a>
-        <a href="/service4" className={style.serviceItem}>
-          <img src="img/service4.jpg" alt="Послуга 4" />
+        <a href="/services/courier" className={style.serviceItem}>
+          <img src="img/service4.jpg" alt="Courier" />
         </a>
-        <a href="/service5" className={style.serviceItem}>
-          <img src="img/service5.jpg" alt="Послуга 5" />
+        <a href="/services/train" className={style.serviceItem}>
+          <img src="img/service5.jpg" alt="Train" />
         </a>
       </div>
     </section>

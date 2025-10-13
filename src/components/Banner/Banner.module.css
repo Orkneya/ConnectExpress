@@ -18,6 +18,7 @@
   text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
     -2px -2px 0 #1fb4cc;
   margin: 0 auto;
+  transform: translateY(80px);
 }
 
 @media (min-width: 768px) {

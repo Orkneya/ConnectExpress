@@ -1,6 +1,5 @@
 .section {
   padding: 40px 16px;
-  /* background: #f9f9f9; */
 
   background: var(--color-background-section);
   color: #333;
@@ -15,7 +14,7 @@
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 24px;
-  color: #3c94a3;
+  color: var(--color-darker-blue);
 }
 
 .subtitle {
@@ -62,7 +61,7 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #3c94a3;
+  color: var(--color-darker-blue);
   font-weight: bold;
 }
 

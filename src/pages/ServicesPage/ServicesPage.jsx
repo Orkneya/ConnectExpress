@@ -1,4 +1,5 @@
 import style from "./ServicesPage.module.css";
+import { NavLink } from "react-router-dom";
 import autoImg from "../../assets/images/Servises/Автоперевезення.jpg";
 
 function ServicesPage() {
@@ -9,21 +10,25 @@ function ServicesPage() {
       </div>
 
       <div className={style.servicesGrid}>
-        <a href="/services/air" className={style.serviceItem}>
+        <NavLink to="/services/air" className={style.serviceItem}>
           <img src="img/service1.jpg" alt="Air" />
-        </a>
-        <a href="/services/auto" className={style.serviceItem}>
+        </NavLink>
+
+        <NavLink to="/services/auto" className={style.serviceItem}>
           <img src={autoImg} alt="Auto" />
-        </a>
-        <a href="/services/sea" className={style.serviceItem}>
+        </NavLink>
+
+        <NavLink to="/services/sea" className={style.serviceItem}>
           <img src="img/service3.jpg" alt="Sea" />
-        </a>
-        <a href="/services/courier" className={style.serviceItem}>
+        </NavLink>
+
+        <NavLink to="/services/courier" className={style.serviceItem}>
           <img src="img/service4.jpg" alt="Courier" />
-        </a>
-        <a href="/services/train" className={style.serviceItem}>
+        </NavLink>
+
+        <NavLink to="/services/train" className={style.serviceItem}>
           <img src="img/service5.jpg" alt="Train" />
-        </a>
+        </NavLink>
       </div>
     </section>
   );

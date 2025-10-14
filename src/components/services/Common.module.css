@@ -5,12 +5,31 @@
   align-items: center;
 }
 
+.hero1 {
+  background: url("../../assets/images/Servises/Avia.webp") center/cover
+    no-repeat;
+}
+.hero2 {
+  background: url("../../assets/images/Servises/Auto.webp") center/cover
+    no-repeat;
+}
+.hero3 {
+  background: url("../../assets/images/Servises/Sea.webp") center/cover
+    no-repeat;
+}
+.hero4 {
+  background: url("../../assets/images/Servises/Auto.webp") center/cover
+    no-repeat;
+}
+.hero5 {
+  background: url("../../assets/images/Servises/Auto.webp") center/cover
+    no-repeat;
+}
+
 .hero {
   position: relative;
   width: 100%;
   height: 35vh;
-  background: url("../../assets/images/Servises/Автоперевезення.jpg")
-    center/cover no-repeat;
   display: flex;
   align-items: flex-end;
   justify-content: center;

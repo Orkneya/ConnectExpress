@@ -1,6 +1,10 @@
 import style from "./ServicesPage.module.css";
 import { NavLink } from "react-router-dom";
-import autoImg from "../../assets/images/Servises/Автоперевезення.jpg";
+import aviaImg from "../../assets/images/Servises/Avia.webp";
+import autoImg from "../../assets/images/Servises/Auto.webp";
+import seaImg from "../../assets/images/Servises/Sea.webp";
+import courierImg from "../../assets/images/Servises/Courier.webp";
+// import autoImg from "../../assets/images/Servises/Auto.webp";
 
 function ServicesPage() {
   return (
@@ -11,7 +15,7 @@ function ServicesPage() {
 
       <div className={style.servicesGrid}>
         <NavLink to="/services/air" className={style.serviceItem}>
-          <img src="img/service1.jpg" alt="Air" />
+          <img src={aviaImg} alt="Air" />
         </NavLink>
 
         <NavLink to="/services/auto" className={style.serviceItem}>
@@ -19,11 +23,11 @@ function ServicesPage() {
         </NavLink>
 
         <NavLink to="/services/sea" className={style.serviceItem}>
-          <img src="img/service3.jpg" alt="Sea" />
+          <img src={seaImg} alt="Sea" />
         </NavLink>
 
         <NavLink to="/services/courier" className={style.serviceItem}>
-          <img src="img/service4.jpg" alt="Courier" />
+          <img src={courierImg} alt="Courier" />
         </NavLink>
 
         <NavLink to="/services/train" className={style.serviceItem}>

@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Common.module.css";
 
 function Sea() {
@@ -24,7 +23,7 @@ function Sea() {
         </p>
 
         <p className={style.text}>
-          Ви можете скористатися сервісами:
+          <strong>Ви можете скористатися сервісами:</strong>
           <br />• Морські перевезення <strong>FCL</strong> – фрахтування цілого
           контейнера (20”, 40″)
           <br />• Морські перевезення <strong>LCL</strong> – перевезення

@@ -7,7 +7,6 @@ import AirIcon from "../../assets/images/Plane.webp";
 import AutoIcon from "../../assets/images/Truck.webp";
 import SeaIcon from "../../assets/images/Ship.webp";
 import CourierIcon from "../../assets/images/Box.webp";
-import TrainIcon from "../../assets/images/Train.webp";
 import style from "./Slider.module.css";
 import { Link } from "react-router-dom";
 
@@ -20,7 +19,6 @@ const services = [
     icon: CourierIcon,
     link: "/services/courier",
   },
-  { title: "Залізничні перевезення", icon: TrainIcon, link: "/services/train" },
 ];
 
 const ServicesSlider = () => {
@@ -35,7 +33,7 @@ const ServicesSlider = () => {
         pagination={{ clickable: true }}
         breakpoints={{
           768: { slidesPerView: 3, slidesPerGroup: 1 },
-          1440: { slidesPerView: 5, slidesPerGroup: 1 },
+          1440: { slidesPerView: 4, slidesPerGroup: 1 },
         }}
       >
         {services.map((service, index) => (

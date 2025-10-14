@@ -50,9 +50,6 @@ const Navigation = () => {
             <li>
               <MenuLink to="/services/courier">Кур'єрські перевезення</MenuLink>
             </li>
-            <li>
-              <MenuLink to="/services/train">Залізничні перевезення</MenuLink>
-            </li>
           </ul>
         </li>
 

@@ -4,7 +4,6 @@ import aviaImg from "../../assets/images/Servises/Avia.webp";
 import autoImg from "../../assets/images/Servises/Auto.webp";
 import seaImg from "../../assets/images/Servises/Sea.webp";
 import courierImg from "../../assets/images/Servises/Courier.webp";
-// import autoImg from "../../assets/images/Servises/Auto.webp";
 
 function ServicesPage() {
   return (
@@ -28,10 +27,6 @@ function ServicesPage() {
 
         <NavLink to="/services/courier" className={style.serviceItem}>
           <img src={courierImg} alt="Courier" />
-        </NavLink>
-
-        <NavLink to="/services/train" className={style.serviceItem}>
-          <img src="img/service5.jpg" alt="Train" />
         </NavLink>
       </div>
     </section>

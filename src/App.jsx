@@ -9,7 +9,6 @@ import Air from "./components/services/Air.jsx";
 import Auto from "./components/services/Auto.jsx";
 import Courier from "./components/services/Courier.jsx";
 import Sea from "./components/services/Sea.jsx";
-import Train from "./components/services/Train.jsx";
 import Customs from "./components/addservices/Customs.jsx";
 import Insurance from "./components/addservices/Insurance.jsx";
 import Dangerous from "./components/addservices/Dangerous.jsx";
@@ -32,7 +31,6 @@ function App() {
         <Route path="/services/auto" element={<Auto />} />
         <Route path="/services/sea" element={<Sea />} />
         <Route path="/services/courier" element={<Courier />} />
-        <Route path="/services/train" element={<Train />} />
 
         {/* AddServices */}
         <Route path="/addservices/customs" element={<Customs />} />

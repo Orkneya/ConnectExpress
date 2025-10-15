@@ -34,7 +34,7 @@ function About() {
             кожного клієнта.
           </p>
 
-          <blockquote className={style.quote}>
+          <blockquote className={`${style.quote} ${style.text}`}>
             Ми не боїмося викликів, ми їх приймаємо! Навіть коли інші
             відмовляються від «незручного маршруту», «надзвичайних складнощів»,
             «маленького бюджету», «вибагливих замовників», «роботи у вихідні та
@@ -60,7 +60,8 @@ function About() {
           </p>
 
           <h3 className={style.subtitle}>Чому обирають нас?</h3>
-          <ul className={style.list}>
+          {/* <ul className={style.list}> */}
+          <ul className={`${style.list} ${style.text}`}>
             <li>
               <strong>Надійність та якість.</strong> Ваш вантаж — наша головна
               турбота. Ми гарантуємо найвищий рівень обслуговування та безпеки.
@@ -88,11 +89,6 @@ function About() {
               консультування з усіх питань.
             </li>
           </ul>
-
-          <div className={style.cta}>
-            <button className={style.button}>Отримати розрахунок</button>
-          </div>
-
           <p className={style.signature}>
             З повагою, команда{" "}
             <span className={style.express}>«Коннект Експрес»</span>

@@ -72,23 +72,8 @@
   margin: 32px 0;
 }
 
-.button {
-  background: var(--color-darker-blue);
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.button:hover {
-  background: var(--color-blue);
-}
-
 .signature {
+  font-size: 20px;
   margin-top: 24px;
   font-weight: 500;
   text-align: right;

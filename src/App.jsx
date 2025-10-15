@@ -12,31 +12,35 @@ import Sea from "./components/services/Sea.jsx";
 import Dangerous from "./components/addservices/Dangerous.jsx";
 import Customs from "./components/services/Сustoms.jsx";
 import Insurance from "./components/services/Insurance.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   return (
-    <Routes>
-      <Route element={<Layout isHome={true} />}>
-        <Route path="/" element={<Home />} />
-      </Route>
-      <Route element={<Layout />}>
-        <Route path="/services" element={<ServicesPage />} />
-        <Route path="/addservices" element={<AddServicesPage />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<ContactPage />} />
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route element={<Layout isHome={true} />}>
+          <Route path="/" element={<Home />} />
+        </Route>
+        <Route element={<Layout />}>
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/addservices" element={<AddServicesPage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<ContactPage />} />
 
-        {/* Services */}
-        <Route path="/services/air" element={<Air />} />
-        <Route path="/services/auto" element={<Auto />} />
-        <Route path="/services/sea" element={<Sea />} />
-        <Route path="/services/courier" element={<Courier />} />
+          {/* Services */}
+          <Route path="/services/air" element={<Air />} />
+          <Route path="/services/auto" element={<Auto />} />
+          <Route path="/services/sea" element={<Sea />} />
+          <Route path="/services/courier" element={<Courier />} />
 
-        {/* AddServices */}
-        <Route path="/addservices/customs" element={<Customs />} />
-        <Route path="/addservices/insurance" element={<Insurance />} />
-        <Route path="/addservices/dangerous" element={<Dangerous />} />
-      </Route>
-    </Routes>
+          {/* AddServices */}
+          <Route path="/addservices/customs" element={<Customs />} />
+          <Route path="/addservices/insurance" element={<Insurance />} />
+          <Route path="/addservices/dangerous" element={<Dangerous />} />
+        </Route>
+      </Routes>
+    </>
   );
 }
 

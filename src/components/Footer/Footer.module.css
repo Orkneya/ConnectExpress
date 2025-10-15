@@ -9,7 +9,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  padding: 16px 10px;
+  padding: 16px 15px;
   box-sizing: border-box;
   background-color: var(--color-background-blue);
 }
@@ -48,7 +48,7 @@
 
 .socials {
   display: flex;
-  gap: 12px;
+  gap: 16px;
   justify-content: center;
 }
 

@@ -30,6 +30,9 @@ function Courier() {
           універсальною для різних потреб.
         </p>
       </div>
+      <div className={style.cta}>
+        <button className={style.button}>Отримати розрахунок</button>
+      </div>
     </section>
   );
 }

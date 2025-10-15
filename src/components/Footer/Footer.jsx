@@ -76,7 +76,7 @@ const Footer = () => {
               />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/connectexpressandglobal?utm_source=qr&igsh=MXFrM2I4bHJ3ZmFvYg=="
               target="_blank"
               rel="noreferrer"
               aria-label="Instagram"

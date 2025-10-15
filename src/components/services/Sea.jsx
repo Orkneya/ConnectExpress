@@ -48,6 +48,9 @@ function Sea() {
           рішення для доставки вантажу.
         </p>
       </div>
+      <div className={style.cta}>
+        <button className={style.button}>Отримати розрахунок</button>
+      </div>
     </section>
   );
 }

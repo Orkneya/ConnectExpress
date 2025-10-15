@@ -1,7 +1,7 @@
 import React from "react";
 
 function ContactPage() {
-  return <div>ContactPage</div>;
+  return <div>DocumentsPage</div>;
 }
 
 export default ContactPage;

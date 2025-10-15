@@ -1,5 +1,4 @@
 .footerSection {
-  background-color: var(--color-background-blue);
   margin-top: auto;
   width: 100%;
 }
@@ -10,8 +9,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
-  padding: 16px 0;
+  padding: 16px 10px;
   box-sizing: border-box;
+  background-color: var(--color-background-blue);
 }
 
 .logo {
@@ -34,13 +34,13 @@
 }
 
 .icon {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   flex-shrink: 0;
 }
 
 .text {
-  font-size: 14px;
+  font-size: 16px;
   color: var(--color-input);
   font-weight: 600;
   margin: 0;
@@ -64,21 +64,16 @@
 
   .contacts {
     flex-direction: row;
-    gap: 16px;
-  }
-
-  .logo {
-    display: flex;
-    height: 36px;
+    gap: 20px;
   }
 
   .icon {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
   }
 
   .text {
-    font-size: 16px;
+    font-size: 22px;
   }
 
   .socials {
@@ -93,16 +88,17 @@
 
 @media (min-width: 1440px) {
   .logo {
+    display: flex;
     height: 40px;
   }
 
   .icon {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
 
   .text {
-    font-size: 18px;
+    font-size: 24px;
   }
 
   .socialIcon {
@@ -111,8 +107,7 @@
   }
 }
 
-/* Мобильная версия: скрываем соцсети сверху, оставляем только внизу */
-@media (max-width: 767px) {
+@media (max-width: 1440px) {
   .footerContainer {
     flex-direction: column;
     align-items: center;

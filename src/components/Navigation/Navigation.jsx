@@ -67,11 +67,6 @@ const Navigation = () => {
               </MenuLink>
             </li>
             <li>
-              <MenuLink to="/addservices/temperature">
-                Температурна логістика
-              </MenuLink>
-            </li>
-            <li>
               <MenuLink to="/addservices/dangerous">
                 Небезпечні вантажі
               </MenuLink>
@@ -83,7 +78,7 @@ const Navigation = () => {
           <MenuLink to="/about">Про компанію</MenuLink>
         </li>
         <li>
-          <MenuLink to="/contact">Контакти</MenuLink>
+          <MenuLink to="/contact">Документи</MenuLink>
         </li>
       </ul>
     </div>

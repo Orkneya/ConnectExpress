@@ -1,4 +1,3 @@
-import React from "react";
 import style from "./Common.module.css";
 
 function Air() {
@@ -52,6 +51,9 @@ function Air() {
           Надаємо широкий набір додаткових послуг, що дає нам змогу
           запропонувати послугу, яка максимально відповідає вашим потребам.
         </p>
+      </div>
+      <div className={style.cta}>
+        <button className={style.button}>Отримати розрахунок</button>
       </div>
     </section>
   );

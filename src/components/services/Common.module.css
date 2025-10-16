@@ -21,6 +21,14 @@
   background: url("../../assets/images/Servises/Courier.webp") center/cover
     no-repeat;
 }
+.hero5 {
+  background: url("../../assets/images/Servises/Broker.webp") center/cover
+    no-repeat;
+}
+.hero6 {
+  background: url("../../assets/images/Servises/Insurens.webp") center/cover
+    no-repeat;
+}
 
 .hero {
   position: relative;

@@ -3,7 +3,7 @@ import style from "./Common.module.css";
 function Customs() {
   return (
     <section className={style.autoPage}>
-      <div className={`${style.hero} ${style.hero4}`}>
+      <div className={`${style.hero} ${style.hero5}`}>
         <h2 className={style.heroTitle}>Митно-брокерські послуги</h2>
       </div>
 

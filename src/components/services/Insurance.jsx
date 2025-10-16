@@ -3,7 +3,7 @@ import style from "./Common.module.css";
 function Insurance() {
   return (
     <section className={style.autoPage}>
-      <div className={`${style.hero} ${style.hero2}`}>
+      <div className={`${style.hero} ${style.hero6}`}>
         <h2 className={style.heroTitle}>Страхування вантажу</h2>
       </div>
 

@@ -38,7 +38,8 @@
   z-index: 1;
 }
 
-.servicesGrid {
+.servicesGrid,
+.servicesGridAdd {
   display: grid;
   width: 100%;
   margin: 2rem auto;
@@ -56,6 +57,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .servicesGridAdd {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .heroTitle {
     font-size: 3rem;
   }
@@ -70,14 +75,6 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
-
-/* .serviceItem {
-  display: block;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-} */
 
 .serviceItem {
   display: flex;

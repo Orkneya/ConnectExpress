@@ -1,9 +1,33 @@
+import style from "../ServicesPage/ServicesPage.module.css";
+import { NavLink } from "react-router-dom";
+
+import customsImg from "../../assets/images/Servises/Broker.webp";
+import insuranceImg from "../../assets/images/Servises/Insurens.webp";
+
 function AddServicesPage() {
   return (
-    <div>
-      <h1>Додаткові послуги</h1>
-      <p>Оберіть потрібну додаткову послугу з меню.</p>
-    </div>
+    <section className={style.servicesPage}>
+      <div className={style.hero}>
+        <h1 className={style.heroTitle}>Додаткові послуги</h1>
+      </div>
+
+      <div className={style.servicesGridAdd}>
+        <NavLink to="/addservices/customs" className={style.serviceItem}>
+          <img src={customsImg} alt=" Митно-брокерські послуги" />
+          <p className={style.serviceTitle}> Митно-брокерські послуги</p>
+        </NavLink>
+
+        <NavLink to="/addservices/insurance" className={style.serviceItem}>
+          <img src={insuranceImg} alt="Страхування вантажу" />
+          <p className={style.serviceTitle}>Страхування вантажу</p>
+        </NavLink>
+
+        <NavLink to="/addservices/dangerous" className={style.serviceItem}>
+          <img src={insuranceImg} alt="Небезпечні вантажі" />
+          <p className={style.serviceTitle}>Небезпечні вантажі</p>
+        </NavLink>
+      </div>
+    </section>
   );
 }
 

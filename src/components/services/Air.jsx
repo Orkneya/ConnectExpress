@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./Common.module.css";
 
 function Air() {
@@ -52,9 +53,9 @@ function Air() {
           запропонувати послугу, яка максимально відповідає вашим потребам.
         </p>
       </div>
-      <div className={style.cta}>
-        <button className={style.button}>Отримати розрахунок</button>
-      </div>
+      <Link to="/delivery" className={style.button}>
+        Отримати розрахунок
+      </Link>
     </section>
   );
 }

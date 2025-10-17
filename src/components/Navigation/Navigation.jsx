@@ -78,7 +78,7 @@ const Navigation = () => {
           <MenuLink to="/about">Про компанію</MenuLink>
         </li>
         <li>
-          <MenuLink to="/contact">Документи</MenuLink>
+          <MenuLink to="/document">Документи</MenuLink>
         </li>
       </ul>
     </div>

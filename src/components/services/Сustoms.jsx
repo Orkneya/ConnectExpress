@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import style from "./Common.module.css";
 
 function Customs() {
@@ -33,9 +34,9 @@ function Customs() {
         </p>
       </div>
 
-      <div className={style.cta}>
-        <button className={style.button}>Отримати консультацію</button>
-      </div>
+      <Link to="/delivery" className={style.button}>
+        Отримати розрахунок
+      </Link>
     </section>
   );
 }

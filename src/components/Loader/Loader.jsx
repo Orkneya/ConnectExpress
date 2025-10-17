@@ -19,7 +19,7 @@ const Loader = () => {
   return (
     <div className={s.containerLoader}>
       <ClipLoader
-        color="#649179"
+        color="#1fb4cc"
         loading
         size={loaderSize}
         speedMultiplier={1}

@@ -1,9 +1,27 @@
 // import React from "react";
+// import { useState } from "react";
 import Container from "../../components/Container/Container";
 import style from "./About.module.css";
 
 function About() {
+  // const [star, setStar] = useState(0);
   return (
+    // <div>
+    //   {[...Array(5)].map((_, index) => {
+    //     const count = index + 1;
+    //     return (
+    //       <span
+    //         key={index}
+    //         // className={count <= star ? "color:red" : "color:blue"}
+    //         onClick={() => setStar(count)}
+    //         style={{ color: count <= star ? "red" : "blue" }}
+    //       >
+    //         ★
+    //       </span>
+    //     );
+    //   })}
+    // </div>
+
     <section className={style.section}>
       <Container>
         <div className={style.container}>

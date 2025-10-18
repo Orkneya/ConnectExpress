@@ -5,6 +5,7 @@ import style from "./Navigation.module.css";
 import Logo from "../../assets/images/LogoConnect.png";
 import CloseIcon from "../../assets/icons/close.svg";
 import BurgerIcon from "../../assets/icons/burger-regular.svg";
+import Phone from "../../assets/icons/phone.svg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -81,6 +82,10 @@ const Navigation = () => {
           <MenuLink to="/document">Документи</MenuLink>
         </li>
       </ul>
+      <a className={style.contactItem} href="tel:+380506467573">
+        <img className={style.icon} src={Phone} alt="Phone" />
+        <span className={style.text}>+38 050 646 75 73</span>
+      </a>
     </div>
   );
 };

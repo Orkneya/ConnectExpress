@@ -22,7 +22,7 @@ const Air = lazy(() => import("./components/services/Air.jsx"));
 const Auto = lazy(() => import("./components/services/Auto.jsx"));
 const Courier = lazy(() => import("./components/services/Courier.jsx"));
 const Sea = lazy(() => import("./components/services/Sea.jsx"));
-const Dangerous = lazy(() => import("./components/addservices/Dangerous.jsx"));
+const Dangerous = lazy(() => import("./components/services/Dangerous.jsx"));
 const Customs = lazy(() => import("./components/services/Сustoms.jsx"));
 const Insurance = lazy(() => import("./components/services/Insurance.jsx"));
 

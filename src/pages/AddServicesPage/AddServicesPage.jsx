@@ -7,7 +7,7 @@ import insuranceImg from "../../assets/images/Servises/Insurens.webp";
 function AddServicesPage() {
   return (
     <section className={style.servicesPage}>
-      <div className={style.hero}>
+      <div className={style.hero1}>
         <h1 className={style.heroTitle}>Додаткові послуги</h1>
       </div>
 

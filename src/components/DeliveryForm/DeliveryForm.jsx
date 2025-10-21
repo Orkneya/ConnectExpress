@@ -32,7 +32,7 @@ const DeliveryForm = () => {
     size: Yup.string()
       .matches(
         /^\d+([x*])\d+\1\d+$/,
-        "Розміри повинні бути в форматі ДxШxВ (см)"
+        "Розміри повинні бути в форматі Д*Ш*В (см)"
       )
       .required("Вкажіть розміри"),
     cargoType: Yup.string().required("Вкажіть характер вантажу"),
@@ -127,7 +127,7 @@ Email: ${values.email}
             </div>
 
             <div>
-              <Field name="size" placeholder="Розміри (ДxШxВ, см)" />
+              <Field name="size" placeholder="Розміри (Д*Ш*В, см)" />
               <ErrorMessage
                 name="size"
                 component="div"

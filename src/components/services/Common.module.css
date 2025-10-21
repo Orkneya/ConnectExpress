@@ -29,6 +29,10 @@
   background: url("../../assets/images/Servises/Insurens.webp") center/cover
     no-repeat;
 }
+.hero7 {
+  background: url("../../assets/images/Servises/Dangerous.webp") center/cover
+    no-repeat;
+}
 
 .hero {
   position: relative;

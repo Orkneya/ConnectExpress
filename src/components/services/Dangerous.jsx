@@ -4,7 +4,7 @@ import style from "./Common.module.css";
 function Dangerous() {
   return (
     <section className={style.autoPage}>
-      <div className={`${style.hero} ${style.hero1}`}>
+      <div className={`${style.hero} ${style.hero7}`}>
         <h2 className={style.heroTitle}>Небезпечні вантажі</h2>
       </div>
 

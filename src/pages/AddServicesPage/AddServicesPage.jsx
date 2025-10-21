@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 import customsImg from "../../assets/images/Servises/Broker.webp";
 import insuranceImg from "../../assets/images/Servises/Insurens.webp";
+import dangerouseImg from "../../assets/images/Servises/Dangerous.webp";
 
 function AddServicesPage() {
   return (
@@ -23,7 +24,7 @@ function AddServicesPage() {
         </NavLink>
 
         <NavLink to="/addservices/dangerous" className={style.serviceItem}>
-          <img src={insuranceImg} alt="Небезпечні вантажі" />
+          <img src={dangerouseImg} alt="Небезпечні вантажі" />
           <p className={style.serviceTitle}>Небезпечні вантажі</p>
         </NavLink>
       </div>

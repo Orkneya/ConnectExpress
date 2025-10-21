@@ -19,7 +19,7 @@ const Footer = () => {
           <div className={style.contacts}>
             <a className={style.contactItem} href="tel:+380506467573">
               <img className={style.icon} src={Phone} alt="Phone" />
-              <span className={style.text}>+38 050 646 75 73</span>
+              <span className={style.text}>+38 050 157 60 15</span>
             </a>
             <a
               className={style.contactItem}
@@ -28,7 +28,7 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <img className={style.icon} src={Email} alt="Email" />
-              <span className={style.text}>connect_global@ukr.net</span>
+              <span className={style.text}>office@connect-express.com.ua</span>
             </a>
           </div>
 
@@ -55,18 +55,6 @@ const Footer = () => {
                 src={InstagramIcon}
                 className={style.socialIcon}
                 alt="Instagram"
-              />
-            </a>
-            <a
-              href="https://linkedin.com"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="LinkedIn"
-            >
-              <img
-                src={LinkedInIcon}
-                className={style.socialIcon}
-                alt="LinkedIn"
               />
             </a>
             <a

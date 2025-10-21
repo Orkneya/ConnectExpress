@@ -48,7 +48,7 @@
 
 .socials {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -78,6 +78,7 @@
 
   .socials {
     justify-content: flex-end;
+    gap: 28px;
   }
 
   .socialIcon {

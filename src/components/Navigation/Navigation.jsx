@@ -84,7 +84,7 @@ const Navigation = () => {
       </ul>
       <a className={style.contactItem} href="tel:+380506467573">
         <img className={style.icon} src={Phone} alt="Phone" />
-        <span className={style.text}>+38 050 646 75 73</span>
+        <span className={style.text}>+38 050 157 60 15</span>
       </a>
     </div>
   );

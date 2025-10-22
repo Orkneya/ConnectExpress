@@ -56,7 +56,7 @@
 
 .heroTitle {
   position: relative;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--color-white);
   text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,

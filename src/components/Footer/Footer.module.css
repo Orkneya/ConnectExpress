@@ -40,7 +40,7 @@
 }
 
 .text {
-  font-size: 16px;
+  font-size: 20px;
   color: var(--color-input);
   font-weight: 600;
   margin: 0;
@@ -73,7 +73,7 @@
   }
 
   .text {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .socials {
@@ -99,7 +99,7 @@
   }
 
   .text {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .socialIcon {

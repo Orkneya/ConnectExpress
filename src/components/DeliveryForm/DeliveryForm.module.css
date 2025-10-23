@@ -91,13 +91,14 @@ input {
 } */
 
 .formContainer {
-  width: 90%;
+  width: 94%;
   max-width: 900px;
   background: white;
   padding: 2rem;
   border-radius: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: 2rem auto;
+  box-sizing: border-box;
 }
 
 .title {
@@ -110,7 +111,8 @@ input {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
+  align-items: stretch;
   gap: 1rem;
 }
 
@@ -130,7 +132,7 @@ input {
 
 .error {
   font-size: 0.85rem;
-  color: darkred;
+  color: var(--color-red-light);
   margin-top: 2px;
 }
 
@@ -145,6 +147,8 @@ input {
   cursor: pointer;
   transition: background 0.3s ease;
   margin-top: 20px;
+  width: auto;
+  align-self: center;
 }
 
 .button:hover {

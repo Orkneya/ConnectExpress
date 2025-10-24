@@ -1,16 +1,20 @@
 import styles from "./DocumentPage.module.css";
+import style from "../ServicesPage/ServicesPage.module.css";
+import statementImage from "../../assets/images/Statement.webp";
 
 function DocumentsPage() {
   return (
-    <div className={styles.container}>
-      <h1 className={styles.title}>Документи для заповнення</h1>
-      <p className={styles.description}>
+    <section className={styles.documentPage}>
+      <div className={style.hero2}>
+        <h1 className={style.heroTitle}>Документи для заповнення</h1>
+      </div>
+      <h3 className={styles.description}>
         Будь ласка, завантажте та заповніть документ, потім надішліть його нам.
-      </p>
+      </h3>
       <ul className={styles.list}>
         <li className={styles.item}>
           <img
-            src="/example.png"
+            src={statementImage}
             alt="Образец документа"
             style={{ maxWidth: "100%" }}
           />
@@ -21,11 +25,11 @@ function DocumentsPage() {
             className={styles.link}
           >
             {" "}
-            Открыть документ
+            Завантажити документ
           </a>
         </li>
       </ul>
-    </div>
+    </section>
   );
 }
 

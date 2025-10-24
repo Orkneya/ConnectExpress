@@ -11,7 +11,8 @@
 }
 
 .hero,
-.hero1 {
+.hero1,
+.hero2 {
   position: relative;
   width: 100%;
   height: 40vh;
@@ -24,9 +25,13 @@
 .hero1 {
   background: url("../../assets/images/AddServises.webp") center/cover no-repeat;
 }
+.hero2 {
+  background: url("../../assets/images/Documents.webp") center/cover no-repeat;
+}
 
 .hero::after,
-.hero1::after {
+.hero1::after,
+.hero2::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -85,7 +90,8 @@
   }
 
   .hero::after,
-  .hero1::after {
+  .hero1::after,
+  .hero2::after {
     height: 80px;
   }
 

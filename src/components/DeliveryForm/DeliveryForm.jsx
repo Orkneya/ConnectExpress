@@ -17,10 +17,10 @@ const DeliveryForm = () => {
 
   const validationSchema = Yup.object({
     fromCountry: Yup.string()
-      .matches(/^[A-Za-zА-Яа-яЁё\s-]+$/, "Только буквы")
+      .matches(/^[A-Za-zА-Яа-яЁё\s-]+$/, "Тільки літери")
       .required("Вкажіть країну відправлення"),
     toCountry: Yup.string()
-      .matches(/^[A-Za-zА-Яа-яЁё\s-]+$/, "Тільки букви")
+      .matches(/^[A-Za-zА-Яа-яЁё\s-]+$/, "Тільки літери")
       .required("Вкажіть країну призначення"),
     weight: Yup.number()
       .typeError("Вага повинна бути числом")
@@ -28,23 +28,21 @@ const DeliveryForm = () => {
       .required("Вкажіть вагу"),
     size: Yup.string()
       .matches(
-        /^\d+([x*])\d+\1\d+$/,
-        "Розміри повинні бути в форматі Д*Ш*В (см)"
+        /^\d+[x*×]\d+[x*×]\d+$/,
+        "Розміри повинні бути в форматі Д*Ш*В (см), допустимі роздільники: x, *, ×"
       )
       .required("Вкажіть розміри"),
     cargoType: Yup.string().required("Вкажіть характер вантажу"),
     name: Yup.string().required("Вкажіть ім’я"),
     email: Yup.string().email("Невірний email").required("Обов’язкове поле"),
     phone: Yup.string()
-      .matches(/^\+?\d{10,13}$/, "Телефон должен быть в формате +380501234567")
+      .matches(/^\+?\d{10,13}$/, "Телефон повинен бути в форматі +380501234567")
       .required("Вкажіть телефон"),
   });
 
   const handleSubmit = async (values, { resetForm }) => {
     try {
       const res = await axios.post("/api/send", values);
-
-      // const res = await axios.post("http://localhost:5000/api/send", values);
       if (res.data.success) {
         alert("Дані успішно надіслані!");
         resetForm();

@@ -43,6 +43,7 @@ Email: ${email}
 
     // e-mail
     const transporter = nodemailer.createTransport({
+      // host: "smtp.meta.ua",
       host: "smtp.ukr.net",
       port: 465,
       secure: true,

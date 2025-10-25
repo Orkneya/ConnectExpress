@@ -44,7 +44,7 @@
 .heroTitle {
   margin-bottom: -235px;
   position: relative;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: var(--color-white);
   text-shadow: 3px 3px 0 #1fb4cc, -2px 2px 0 #1fb4cc, 2px -2px 0 #1fb4cc,
@@ -85,8 +85,8 @@
   }
 
   .heroTitle {
-    font-size: 3rem;
-    margin-bottom: -230px;
+    font-size: 3.5rem;
+    margin-bottom: -210px;
   }
 
   .hero::after,
@@ -103,7 +103,7 @@
 @media (min-width: 1440px) {
   .heroTitle {
     font-size: 4rem;
-    margin-bottom: -230px;
+    margin-bottom: -190px;
   }
 
   .servicesGrid {

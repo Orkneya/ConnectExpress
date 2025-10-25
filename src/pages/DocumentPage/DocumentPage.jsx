@@ -6,7 +6,7 @@ function DocumentsPage() {
   return (
     <section className={styles.documentPage}>
       <div className={style.hero2}>
-        <h1 className={style.heroTitle}>Документи для заповнення</h1>
+        <h1 className={style.heroTitle}>Документи</h1>
       </div>
       <h3 className={styles.description}>
         Будь ласка, завантажте та заповніть документ, потім надішліть його нам.

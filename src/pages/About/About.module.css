@@ -29,6 +29,10 @@
   margin-bottom: 16px;
 }
 
+.brand {
+  color: var(--color-red-light);
+}
+
 .accent {
   color: var(--color-red-light);
   font-weight: 600;

@@ -18,6 +18,10 @@
   --color-input-light: #555;
   --shadow-focus: 0px 0px 0px 4px rgba(78, 70, 180, 0.2);
 }
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
 a {
   font-weight: 500;
   color: var(--color-darker-blue);

@@ -1,12 +1,7 @@
-.section {
+/* .section {
   background: var(--color-background-section);
   color: #333;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-}
+} */
 
 .title {
   font-size: 28px;
@@ -85,7 +80,7 @@
 }
 
 @media (min-width: 768px) {
-  .text {
+  .textAbout {
     font-size: 20px;
     line-height: 1.6;
     margin-bottom: 18px;

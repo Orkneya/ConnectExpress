@@ -1,18 +1,19 @@
 import style from "./About.module.css";
 import styles from "../ServicesPage/ServicesPage.module.css";
+import st from "../../components/services/Common.module.css";
 
 function About() {
   return (
-    <section className={style.section}>
+    <section className={st.autoPage}>
       <div className={styles.hero3}>
         <h1 className={styles.heroTitle}> Про компанію</h1>
       </div>
-      <div className={style.container}>
+      <div className={st.content}>
         <h2 className={style.title}>
           Про компанію <span className={style.brand}>«Коннект Експрес»</span>
         </h2>
 
-        <p className={style.textAbout}>
+        <p className={st.text}>
           Команда, що сформувалася навколо цієї ідеї, складалася з фахівців, які
           мали багаторічний досвід у різних галузях логістики: автомобільних,
           авіаційних та морських перевезеннях, митних процедурах і складуванні.
@@ -20,7 +21,7 @@ function About() {
           клієнти, так і співробітники.
         </p>
 
-        <p className={style.textAbout}>
+        <p className={st.text}>
           Вони розуміли, що сучасний бізнес вимагає не лише ефективного
           транспортування вантажів, а й комплексного підходу до управління
           логістичними процесами. Так виникла компанія{" "}
@@ -29,7 +30,7 @@ function About() {
           швидким і простим.
         </p>
 
-        <p className={style.textAbout}>
+        <p className={st.text}>
           Основним принципом роботи компанії є встановлення довгострокових
           відносин із клієнтами, побудованих на взаємній довірі та розумінні
           потреб кожного замовника. В «Коннект Експресс» вірять, що тільки
@@ -37,33 +38,33 @@ function About() {
           кожного клієнта.
         </p>
 
-        <blockquote className={`${style.quote} ${style.textAbout}`}>
+        <blockquote className={`${style.quote} ${st.text}`}>
           Ми не боїмося викликів, ми їх приймаємо! Навіть коли інші
           відмовляються від «незручного маршруту», «надзвичайних складнощів»,
           «маленького бюджету», «вибагливих замовників», «роботи у вихідні та
           після 18»...
         </blockquote>
 
-        <p className={style.textAbout}>
+        <p className={st.text}>
           Ми підлаштовуємося під графік роботи наших клієнтів, завжди
           відповідаємо і працюємо <span className={style.accent}>24/7</span>.
         </p>
 
         <h3 className={style.subtitle}>Наші послуги</h3>
-        <p className={style.textAbout}>
+        <p className={st.text}>
           Сьогодні ми пропонуємо комплексні логістичні рішення, які включають не
           лише перевезення, а й митні процедури, складування, перевалку,
           консолідацію, страхування та професійні консультації.
         </p>
 
-        <p className={style.textAbout}>
+        <p className={st.text}>
           Наші спеціалісти не просто виконують свою роботу – вони є надійними
           помічниками та консультантами для своїх клієнтів, допомагаючи їм
           оптимізувати всі аспекти логістики.
         </p>
 
         <h3 className={style.subtitle}>Чому обирають нас?</h3>
-        <ul className={`${style.list} ${style.textAbout}`}>
+        <ul className={`${style.list} ${st.text}`}>
           <li>
             <strong>Надійність та якість.</strong> Ваш вантаж — наша головна
             турбота. Ми гарантуємо найвищий рівень обслуговування та безпеки.

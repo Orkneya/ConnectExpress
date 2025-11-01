@@ -5,8 +5,8 @@ import styles from "./DeliveryForm.module.css";
 
 const DeliveryForm = () => {
   const initialValues = {
-    fromCountry: "",
-    toCountry: "",
+    from: "",
+    to: "",
     weight: "",
     size: "",
     cargoType: "",

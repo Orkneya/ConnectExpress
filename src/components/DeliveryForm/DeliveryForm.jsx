@@ -5,8 +5,8 @@ import styles from "./DeliveryForm.module.css";
 
 const DeliveryForm = () => {
   const initialValues = {
-    from: "",
-    to: "",
+    fromCountry: "",
+    toCountry: "",
     weight: "",
     size: "",
     cargoType: "",
@@ -54,6 +54,17 @@ const DeliveryForm = () => {
     }
   };
 
+  const placeholders = {
+    fromCountry: "Країна відправлення",
+    toCountry: "Країна призначення",
+    weight: "Вага (кг)",
+    size: "Розміри (Д×Ш×В, см)",
+    cargoType: "Характер вантажу",
+    name: "Ваше ім’я",
+    email: "Email",
+    phone: "Телефон",
+  };
+
   return (
     <div className={styles.formContainer}>
       <h2 className={styles.title}>Замовити доставку</h2>
@@ -65,6 +76,23 @@ const DeliveryForm = () => {
         <Form className={styles.form}>
           <div className={styles.grid}>
             {Object.keys(initialValues).map((key) => (
+              <div key={key} className={styles.fieldWrapper}>
+                <Field
+                  name={key}
+                  placeholder={placeholders[key]} // 👈 Підставляємо українські тексти
+                  className={styles.input}
+                />
+                <ErrorMessage
+                  name={key}
+                  component="div"
+                  className={styles.error}
+                />
+              </div>
+            ))}
+          </div>
+          {/* <Form className={styles.form}>
+          <div className={styles.grid}>
+            {Object.keys(initialValues).map((key) => (
               <div key={key}>
                 <Field name={key} placeholder={key} />
                 <ErrorMessage
@@ -74,7 +102,7 @@ const DeliveryForm = () => {
                 />
               </div>
             ))}
-          </div>
+          </div> */}
           <button type="submit" className={styles.button}>
             Відправити
           </button>

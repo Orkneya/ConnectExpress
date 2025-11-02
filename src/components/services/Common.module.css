@@ -25,10 +25,6 @@
   background: url("../../assets/images/Servises/Brok-mobil.webp") center/cover
     no-repeat;
 }
-/* .hero5 {
-  background: url("../../assets/images/Servises/Broker.webp") center/cover
-    no-repeat;
-} */
 .hero6 {
   background: url("../../assets/images/Servises/Insurens.webp") center/cover
     no-repeat;
@@ -98,6 +94,11 @@
   .heroTitle {
     font-size: 3rem;
     margin-bottom: 0.2rem;
+  }
+
+  .hero5 {
+    background: url("../../assets/images/Servises/Brok-comp.webp") center/cover
+      no-repeat;
   }
 
   .subtitle {

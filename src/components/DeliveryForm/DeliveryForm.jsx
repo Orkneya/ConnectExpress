@@ -90,19 +90,6 @@ const DeliveryForm = () => {
               </div>
             ))}
           </div>
-          {/* <Form className={styles.form}>
-          <div className={styles.grid}>
-            {Object.keys(initialValues).map((key) => (
-              <div key={key}>
-                <Field name={key} placeholder={key} />
-                <ErrorMessage
-                  name={key}
-                  component="div"
-                  className={styles.error}
-                />
-              </div>
-            ))}
-          </div> */}
           <button type="submit" className={styles.button}>
             Відправити
           </button>

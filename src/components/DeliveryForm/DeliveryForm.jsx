@@ -79,7 +79,7 @@ const DeliveryForm = () => {
               <div key={key} className={styles.fieldWrapper}>
                 <Field
                   name={key}
-                  placeholder={placeholders[key]} // 👈 Підставляємо українські тексти
+                  placeholder={placeholders[key]}
                   className={styles.input}
                 />
                 <ErrorMessage

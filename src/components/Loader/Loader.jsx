@@ -9,11 +9,11 @@ const Loader = () => {
     const width = window.innerWidth;
 
     if (width < 480) {
-      setLoaderSize(30); // мобильный
+      setLoaderSize(30);
     } else if (width < 768) {
-      setLoaderSize(50); // планшет
+      setLoaderSize(50);
     } else {
-      setLoaderSize(70); // десктоп
+      setLoaderSize(70);
     }
   }, []);
   return (

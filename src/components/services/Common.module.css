@@ -22,7 +22,7 @@
     no-repeat;
 }
 .hero5 {
-  background: url("../../assets/images/Servises/Brok-mobil.webp") center/cover
+  background: url("../../assets/images/Servises/Brok-car.webp") center/cover
     no-repeat;
 }
 .hero6 {
@@ -65,8 +65,8 @@
 .content {
   width: 100%;
   max-width: 70rem;
-  margin: 1.5rem auto 1.5rem;
-  padding: 0 2.5rem;
+  margin: 1.2rem auto 1.2rem;
+  padding: 0 2rem;
   box-sizing: border-box;
 }
 
@@ -94,11 +94,6 @@
   .heroTitle {
     font-size: 3rem;
     margin-bottom: 0.2rem;
-  }
-
-  .hero5 {
-    background: url("../../assets/images/Servises/Brok-comp.webp") center/cover
-      no-repeat;
   }
 
   .subtitle {
@@ -133,7 +128,7 @@
 
   .content {
     max-width: 87.5rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
   }
 
   .text {

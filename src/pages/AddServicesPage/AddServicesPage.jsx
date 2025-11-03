@@ -1,8 +1,7 @@
 import style from "../ServicesPage/ServicesPage.module.css";
 import { NavLink } from "react-router-dom";
 
-import customsImg from "../../assets/images/Servises/Brok-mobil.webp";
-// import customsImg from "../../assets/images/Servises/Broker.webp";
+import customsImg from "../../assets/images/Servises/Brok-car.webp";
 import insuranceImg from "../../assets/images/Servises/Insurens.webp";
 import dangerouseImg from "../../assets/images/Servises/Dangerous.webp";
 

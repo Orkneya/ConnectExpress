@@ -38,7 +38,7 @@
 
 @media (min-width: 1440px) {
   .section {
-    background-image: url("../../assets/images//mainBunner.webp");
+    background-image: url("../../assets/images/mainBunner.webp");
     min-height: calc(100vh - 56px);
     padding: 0;
   }

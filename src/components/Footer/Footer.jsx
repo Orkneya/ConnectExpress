@@ -6,7 +6,6 @@ import Email from "../../assets/icons/envelope.svg";
 
 import FacebookIcon from "../../assets/icons/facebook.svg";
 import InstagramIcon from "../../assets/icons/instagram.svg";
-import LinkedInIcon from "../../assets/icons/linkedIn.svg";
 import TelegramIcon from "../../assets/icons/telegram.svg";
 
 const Footer = () => {

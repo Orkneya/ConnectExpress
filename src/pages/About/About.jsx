@@ -9,9 +9,10 @@ function About() {
         <h1 className={styles.heroTitle}> Про компанію</h1>
       </div>
       <div className={st.content}>
-        <h2 className={style.title}>
+        <h2 className={style.title}>«Коннект Експрес»</h2>
+        {/* <h2 className={style.title}>
           Про компанію <span className={style.brand}>«Коннект Експрес»</span>
-        </h2>
+        </h2> */}
 
         <p className={st.text}>
           Команда, що сформувалася навколо цієї ідеї, складалася з фахівців, які

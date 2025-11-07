@@ -3,9 +3,9 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import AirIcon from "../../assets/images/Plane.webp";
-import AutoIcon from "../../assets/images/Truck.webp";
-import SeaIcon from "../../assets/images/Ship.webp";
+import AirIcon from "../../assets/images/Plane.png";
+import AutoIcon from "../../assets/images/Truck.png";
+import SeaIcon from "../../assets/images/Ship.png";
 import CourierIcon from "../../assets/images/Box.webp";
 import style from "./Slider.module.css";
 import { Link } from "react-router-dom";

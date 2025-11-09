@@ -43,16 +43,27 @@ Email: ${email}
 
     // e-mail
     const transporter = nodemailer.createTransport({
-      // host: "smtp.meta.ua",
-      host: "smtp.ukr.net",
-      port: 465,
-      secure: true,
-      // service: "gmail",
+      host: process.env.SMTP_HOST,
+      port: Number(process.env.SMTP_PORT),
+      secure: process.env.SMTP_SECURE === "true",
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
       },
     });
+
+    // const transporter = nodemailer.createTransport({
+    //   host: "smtp.ukr.net",
+    //   port: 465,
+    //   secure: true,
+    //   auth: {
+    //     user: process.env.EMAIL_USER,
+    //     pass: process.env.EMAIL_PASS,
+    //   },
+    // });
+
+    // service: "gmail",
+    // host: "smtp.meta.ua",
 
     await transporter.sendMail({
       from: process.env.EMAIL_USER,

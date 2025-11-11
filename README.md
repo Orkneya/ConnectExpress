@@ -6,13 +6,13 @@ A React + Vite application designed to send form submissions directly to **email
 
 ## 🚀 Features
 
-* Built with **React + Vite** for fast performance and HMR
-* Form submission with delivery to **Email**
-* Instant notifications to **Telegram ChatBot**
-* **Environment variables** configured through **Vercel** (версия/Versailles)
-* Modular project architecture
-* Client-side validation
-* Easy deployment
+- Built with **React + Vite** for fast performance and HMR
+- Form submission with delivery to **Email**
+- Instant notifications to **Telegram ChatBot**
+- **Environment variables** configured through **Vercel** (версия/Versailles)
+- Modular project architecture
+- Client-side validation
+- Easy deployment
 
 ---
 
@@ -39,6 +39,8 @@ EMAIL_USER=your_email_login
 EMAIL_PASS=your_email_password_or_app_password
 TELEGRAM_BOT_TOKEN=your_telegram_bot_token
 TELEGRAM_CHAT_ID=your_telegram_chat_id
+```
+
 ---
 
 ## ▶️ Running the Project Locally
@@ -69,9 +71,11 @@ npm run build
 api/
 public/
 src/
-  asseds/
+  assets/
   components/
   pages/
+```
+
 ---
 
 ## 🌐 Deployment
@@ -80,8 +84,8 @@ The project is designed for deployment on **Vercel**.
 
 Make sure to:
 
-* Add environment variables in Vercel
-* Re-deploy after updating variables
+- Add environment variables in Vercel
+- Re-deploy after updating variables
 
 Your production build will be live immediately after deployment.
 
@@ -96,7 +100,6 @@ MIT License.
 ## ✅ Notes
 
 For sending the form to **email** and **Telegram**, environment variables stored in **Vercel** were used. This keeps sensitive data secure and hidden from the public repository.
-
 
 # React + Vite
 

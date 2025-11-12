@@ -1,6 +1,6 @@
 import styles from "./DocumentPage.module.css";
 import style from "../ServicesPage/ServicesPage.module.css";
-import statementImage from "../../assets/images/Statement.webp";
+import statementImage from "../../assets/images/Statement-new.webp";
 
 function DocumentsPage() {
   return (

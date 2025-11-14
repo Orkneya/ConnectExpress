@@ -33,7 +33,8 @@ const Footer = () => {
 
           <div className={style.socials}>
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/share/1Gpd9jx9RL/"
+              // href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
               aria-label="Facebook"

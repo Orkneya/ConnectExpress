@@ -17,26 +17,43 @@ const DeliveryForm = () => {
 
   const validationSchema = Yup.object({
     fromCountry: Yup.string()
-      .matches(/^[A-Za-zА-Яа-яЁё\s-]+$/, "Тільки літери")
+      .matches(
+        /^[\p{L}\s\-’']+$/u,
+        "Можна використовувати лише літери, пробіли, апострофи та дефіси"
+      )
       .required("Вкажіть країну відправлення"),
+
     toCountry: Yup.string()
-      .matches(/^[A-Za-zА-Яа-яЁё\s-]+$/, "Тільки літери")
+      .matches(
+        /^[\p{L}\s\-’']+$/u,
+        "Можна використовувати лише літери, пробіли, апострофи та дефіси"
+      )
       .required("Вкажіть країну призначення"),
+
     weight: Yup.number()
       .typeError("Вага повинна бути числом")
       .positive("Вага повинна бути більше 0")
       .required("Вкажіть вагу"),
+
     size: Yup.string()
       .matches(
         /^\d+[x*×]\d+[x*×]\d+$/,
         "Розміри повинні бути в форматі Д*Ш*В (см), допустимі роздільники: x, *, ×"
       )
       .required("Вкажіть розміри"),
+
     cargoType: Yup.string().required("Вкажіть характер вантажу"),
+
     name: Yup.string().required("Вкажіть ім’я"),
+
     email: Yup.string().email("Невірний email").required("Обов’язкове поле"),
+
     phone: Yup.string()
-      .matches(/^\+?\d{10,13}$/, "Телефон повинен бути в форматі +380501234567")
+      .transform((value) => value.replace(/[\s\-]/g, "")) // убираем пробелы и дефисы
+      .matches(
+        /^\+?\d{5,15}$/,
+        "Телефон повинен містити від 5 цифр, дозволяється + на початку"
+      )
       .required("Вкажіть телефон"),
   });
 

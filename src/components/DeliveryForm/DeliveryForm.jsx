@@ -2,6 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 import styles from "./DeliveryForm.module.css";
+import toast from "react-hot-toast";
 
 const DeliveryForm = () => {
   const initialValues = {
@@ -60,16 +61,31 @@ const DeliveryForm = () => {
   const handleSubmit = async (values, { resetForm }) => {
     try {
       const res = await axios.post("/api/send", values);
+
       if (res.data.success) {
-        alert("Дані успішно надіслані!");
+        toast.success("Дані успішно надіслані!");
         resetForm();
       } else {
-        alert("Помилка при відправленні: " + res.data.error);
+        toast.error("Помилка: " + res.data.error);
       }
     } catch (err) {
-      alert("Помилка при відправленні: " + err.message);
+      toast.error("Помилка: " + err.message);
     }
   };
+
+  // const handleSubmit = async (values, { resetForm }) => {
+  //   try {
+  //     const res = await axios.post("/api/send", values);
+  //     if (res.data.success) {
+  //       alert("Дані успішно надіслані!");
+  //       resetForm();
+  //     } else {
+  //       alert("Помилка при відправленні: " + res.data.error);
+  //     }
+  //   } catch (err) {
+  //     alert("Помилка при відправленні: " + err.message);
+  //   }
+  // };
 
   const placeholders = {
     fromCountry: "Країна відправлення",

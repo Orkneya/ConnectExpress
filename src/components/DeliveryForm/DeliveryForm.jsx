@@ -38,7 +38,7 @@ const DeliveryForm = () => {
 
     size: Yup.string()
       .matches(
-        /^\d+[x*×]\d+[x*×]\d+$/,
+        /^\d+([xXхХ*×])\d+([xXхХ*×])\d+$/,
         "Розміри повинні бути в форматі Д*Ш*В (см), допустимі роздільники: x, *, ×"
       )
       .required("Вкажіть розміри"),
@@ -50,7 +50,7 @@ const DeliveryForm = () => {
     email: Yup.string().email("Невірний email").required("Обов’язкове поле"),
 
     phone: Yup.string()
-      .transform((value) => value.replace(/[\s\-]/g, "")) // убираем пробелы и дефисы
+      .transform((value) => value.replace(/[\s\-]/g, ""))
       .matches(
         /^\+?\d{5,15}$/,
         "Телефон повинен містити від 5 цифр, дозволяється + на початку"
